@@ -1,7 +1,6 @@
 import {FC} from 'react'
 import {useIntl} from 'react-intl'
 import {PageTitle} from '../../../../_metronic/layout/core'
-import {KTIcon} from '../../../../_metronic/helpers'
 const AddUsers: FC = () => (
   <>
     <div className={`card`}>
