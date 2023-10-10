@@ -1,0 +1,5 @@
+[data-kt-app-layout='light-sidebar'] .app-sidebar .menu .menu-item .menu-link.active {
+  transition: color 0.2s ease;
+  background-color: #6f3acd;
+  color: var(--bs-primary);
+}

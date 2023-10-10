@@ -1,4 +1,5 @@
 import {SidebarMenuMain} from './SidebarMenuMain'
+import '../sidebar-menu/sidebar.css'
 
 const SidebarMenu = () => {
   return (

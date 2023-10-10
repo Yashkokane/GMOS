@@ -4,7 +4,7 @@ import {useIntl} from 'react-intl'
 import {KTIcon} from '../../../../helpers'
 import {SidebarMenuItemWithSub} from './SidebarMenuItemWithSub'
 import {SidebarMenuItem} from './SidebarMenuItem'
-
+import '../sidebar-menu/sidebar.css'
 const SidebarMenuMain = () => {
   const intl = useIntl()
 
@@ -31,7 +31,7 @@ const SidebarMenuMain = () => {
       >
         <SidebarMenuItem to='/ManageUsers' title='Manage Users' hasBullet={true} />
         <SidebarMenuItem to='/ManageVendors' title='Manage Vendors' hasBullet={true} />
-        <SidebarMenuItem to='/#' title='Manage Clients' hasBullet={true} />
+        <SidebarMenuItem to='/ManageClients' title='Manage Clients' hasBullet={true} />
         <SidebarMenuItem to='/#' title='Manage Roles' hasBullet={true} />
       </SidebarMenuItemWithSub>
       <SidebarMenuItemWithSub

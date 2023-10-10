@@ -1,8 +1,9 @@
+import React from 'react'
 import {FC} from 'react'
-import {useIntl} from 'react-intl'
 import {PageTitle} from '../../../../_metronic/layout/core'
-import {KTIcon} from '../../../../_metronic/helpers'
-const VendorManagementPage: FC = () => (
+import {useIntl} from 'react-intl'
+
+const ManageClientsPage: FC = () => (
   <>
     <div className={`card`}>
       <div className='row'>
@@ -411,14 +412,14 @@ const VendorManagementPage: FC = () => (
   </>
 )
 
-const ManageVendors = () => {
+const ManageClients = () => {
   const intl = useIntl()
   return (
     <>
-      <PageTitle breadcrumbs={[]}>{intl.formatMessage({id: 'Manage Vendors'})}</PageTitle>
-      <VendorManagementPage />
+      <PageTitle breadcrumbs={[]}>{intl.formatMessage({id: 'Manage Clients'})}</PageTitle>
+      <ManageClientsPage />
     </>
   )
 }
 
-export default ManageVendors
+export default ManageClients

@@ -10,6 +10,8 @@ import {ClientDashboardWrapper} from '../pages/Client Pages/Client dashboard/Cli
 import BillingDashboard from '../pages/Admin Pages/Billing dashboard/BillingDashboard'
 import ManageUsers from '../pages/Admin Pages/User page/ManageUsers'
 import ManageVendors from '../pages/Admin Pages/User page/ManageVendors'
+import AddUser from '../pages/Admin Pages/User page/AddUser'
+import ManageClients from '../pages/Admin Pages/User page/ManageClients'
 
 const PrivateRoutes = () => {
   const ProfilePage = lazy(() => import('../modules/profile/ProfilePage'))
@@ -25,7 +27,9 @@ const PrivateRoutes = () => {
         <Route path='BillingDashboard' element={<BillingDashboard />} />
         <Route path='ManageUsers' element={<ManageUsers />} />
         <Route path='ManageVendors' element={<ManageVendors />} />
-        <Route path='vendordashboard'  />
+        <Route path='ManageClients' element={<ManageClients />} />
+        <Route path='AddUsers' element={<AddUser />} />
+        <Route path='vendordashboard' />
         <Route path='menu-test' element={<MenuTestPage />} />
         {/* Lazy Modules */}
         <Route
