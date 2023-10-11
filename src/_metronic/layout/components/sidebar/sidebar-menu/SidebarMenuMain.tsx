@@ -1,8 +1,8 @@
 /* eslint-disable react/jsx-no-target-blank */
-import { useIntl } from 'react-intl'
+import {useIntl} from 'react-intl'
 import '../sidebar-menu/sidebar.css'
-import { SidebarMenuItem } from './SidebarMenuItem'
-import { SidebarMenuItemWithSub } from './SidebarMenuItemWithSub'
+import {SidebarMenuItem} from './SidebarMenuItem'
+import {SidebarMenuItemWithSub} from './SidebarMenuItemWithSub'
 const SidebarMenuMain = () => {
   const intl = useIntl()
 
@@ -28,7 +28,7 @@ const SidebarMenuMain = () => {
         icon='element-11'
       >
         <SidebarMenuItem to='/ManageUsers' title='Manage Users' hasBullet={true} />
-        <SidebarMenuItem to='/ManageVendors' title='Manage Vendors' hasBullet={true} />
+        <SidebarMenuItem to='/ManageVendorsDetails' title='Manage Vendors' hasBullet={true} />
         <SidebarMenuItem to='/ManageClients' title='Manage Clients' hasBullet={true} />
         <SidebarMenuItem to='/ManageRoles' title='Manage Roles' hasBullet={true} />
       </SidebarMenuItemWithSub>
@@ -42,32 +42,32 @@ const SidebarMenuMain = () => {
         <SidebarMenuItem to='/#' title='Manage Suppliers' hasBullet={true}></SidebarMenuItem>
       </SidebarMenuItemWithSub>
       <SidebarMenuItem
-        to='/#'
+        to='/ManageCategory'
         title='Category Management'
         fontIcon='bi-app-indicator'
         icon='element-11'
       ></SidebarMenuItem>
       <SidebarMenuItem
-        to='/#'
+        to='/VendorDetails'
         title='Vendor Management'
         fontIcon='bi-app-indicator'
         icon='element-11'
       ></SidebarMenuItem>
       <SidebarMenuItem
-        to='/#'
+        to='/RateCard'
         title='Manage Rate Card'
         fontIcon='bi-app-indicator'
         icon='element-11'
       ></SidebarMenuItem>
       <SidebarMenuItemWithSub to='/#' title='Account' fontIcon='bi-archive' icon='element-11'>
         <SidebarMenuItem
-          to='/#'
+          to='/BuyerInvoices'
           title='View Buyer Invoices'
           fontIcon='bi-app-indicator'
           icon='element-11'
         ></SidebarMenuItem>
         <SidebarMenuItem
-          to='/#'
+          to='/SupplierInvoices'
           title='View Supplier Invoices'
           fontIcon='bi-app-indicator'
           icon='element-11'
@@ -77,5 +77,4 @@ const SidebarMenuMain = () => {
   )
 }
 
-export { SidebarMenuMain }
-
+export {SidebarMenuMain}

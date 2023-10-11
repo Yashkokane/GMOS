@@ -1,7 +1,6 @@
-import React from 'react'
-import {FC} from 'react'
-import {PageTitle} from '../../../../_metronic/layout/core'
-import {useIntl} from 'react-intl'
+import { FC } from 'react'
+import { useIntl } from 'react-intl'
+import { PageTitle } from '../../../../_metronic/layout/core'
 
 const ManageClientsPage: FC = () => (
   <>
@@ -132,6 +131,7 @@ const ManageClientsPage: FC = () => (
                           height='24px'
                           viewBox='0 0 24 24'
                           version='1.1'
+                          style={{marginLeft: '20px'}}
                         >
                           <g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'>
                             <polygon points='0 0 24 0 24 24 0 24'></polygon>
@@ -207,6 +207,7 @@ const ManageClientsPage: FC = () => (
                           height='24px'
                           viewBox='0 0 24 24'
                           version='1.1'
+                          style={{marginLeft: '20px'}}
                         >
                           <g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'>
                             <polygon points='0 0 24 0 24 24 0 24'></polygon>
@@ -282,6 +283,7 @@ const ManageClientsPage: FC = () => (
                           height='24px'
                           viewBox='0 0 24 24'
                           version='1.1'
+                          style={{marginLeft: '20px'}}
                         >
                           <g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'>
                             <polygon points='0 0 24 0 24 24 0 24'></polygon>

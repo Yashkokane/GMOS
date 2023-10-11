@@ -10,10 +10,15 @@ import AddUser from '../pages/Admin Pages/User page/AddUser'
 import ManageClients from '../pages/Admin Pages/User page/ManageClients'
 import ManageRoles from '../pages/Admin Pages/User page/ManageRoles'
 import ManageUsers from '../pages/Admin Pages/User page/ManageUsers'
-import ManageVendors from '../pages/Admin Pages/User page/ManageVendors'
+import ManageVendorsDetails from '../pages/Admin Pages/User page/ManageVendorsDetails'
 import {ClientDashboardWrapper} from '../pages/Client Pages/Client dashboard/ClientDashboardWrapper'
 import {MenuTestPage} from '../pages/MenuTestPage'
 import CreateRoles from '../pages/Admin Pages/User page/CreateRoles'
+import ManageCategory from '../pages/Admin Pages/Category Management/ManageCategory'
+import VendorDetails from '../pages/Admin Pages/Vendor/VendorDetails'
+import RateCard from '../pages/Admin Pages/Rate Card/RateCard'
+import Buyerlnvoices from '../pages/Admin Pages/Accounts/Buyerlnvoices'
+import SupplierInvoices from '../pages/Admin Pages/Accounts/SupplierInvoices'
 
 const PrivateRoutes = () => {
   const ProfilePage = lazy(() => import('../modules/profile/ProfilePage'))
@@ -28,11 +33,16 @@ const PrivateRoutes = () => {
         <Route path='clientdashboard' element={<ClientDashboardWrapper />} />
         <Route path='BillingDashboard' element={<BillingDashboard />} />
         <Route path='ManageUsers' element={<ManageUsers />} />
-        <Route path='ManageVendors' element={<ManageVendors />} />
+        <Route path='ManageVendorsDetails' element={<ManageVendorsDetails />} />
         <Route path='ManageClients' element={<ManageClients />} />
         <Route path='ManageRoles' element={<ManageRoles />} />
         <Route path='AddUsers' element={<AddUser />} />
         <Route path='CreateRoles' element={<CreateRoles />} />
+        <Route path='ManageCategory' element={<ManageCategory />} />
+        <Route path='VendorDetails' element={<VendorDetails />} />
+        <Route path='RateCard' element={<RateCard />} />
+        <Route path='BuyerInvoices' element={<Buyerlnvoices />} />
+        <Route path='SupplierInvoices' element={<SupplierInvoices />} />
         <Route path='vendordashboard' />
         <Route path='menu-test' element={<MenuTestPage />} />
         {/* Lazy Modules

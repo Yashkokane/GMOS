@@ -40,7 +40,7 @@ const RoleManagementPage: FC = () => (
           </div>
         </div>
       </div>
-      <div className='row' style={{marginLeft: '20px', marginTop: '10px'}}>
+      <div className='row' style={{marginLeft: '100px', marginTop: '20px', marginRight: '100px'}}>
         <div className='col-sm-12'>
           <table
             className='table align-middle table-row-dashed fs-6 gy-5 dataTable no-footer'
@@ -60,7 +60,7 @@ const RoleManagementPage: FC = () => (
                   colSpan={1}
                   aria-sort='ascending'
                   aria-label='Name: activate to sort column descending'
-                  style={{width: '229.469px'}}
+                  style={{width: '150px'}}
                 >
                   No
                 </th>
@@ -70,7 +70,7 @@ const RoleManagementPage: FC = () => (
                   rowSpan={1}
                   colSpan={1}
                   aria-label='Email: activate to sort column ascending'
-                  style={{width: '372.047px'}}
+                  style={{width: '250px'}}
                 >
                   Role
                 </th>
@@ -81,7 +81,7 @@ const RoleManagementPage: FC = () => (
                   rowSpan={1}
                   colSpan={1}
                   aria-label='Action: activate to sort column ascending'
-                  style={{width: '172.641px'}}
+                  style={{width: '100px'}}
                 >
                   Action
                 </th>
@@ -110,6 +110,7 @@ const RoleManagementPage: FC = () => (
                           height='24px'
                           viewBox='0 0 24 24'
                           version='1.1'
+                          style={{marginLeft: '20px'}}
                         >
                           <g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'>
                             <polygon points='0 0 24 0 24 24 0 24'></polygon>
@@ -314,7 +315,6 @@ const RoleManagementPage: FC = () => (
                 justifyContent: 'flex-end',
                 marginRight: '20px',
                 marginTop: '20px',
-                
               }}
             >
               <li
@@ -377,7 +377,7 @@ const ManageRoles = () => {
   const intl = useIntl()
   return (
     <>
-      <PageTitle breadcrumbs={[]}>{intl.formatMessage({id: 'Manage Users'})}</PageTitle>
+      <PageTitle breadcrumbs={[]}>{intl.formatMessage({id: 'Manage Roles'})}</PageTitle>
       <RoleManagementPage />
     </>
   )

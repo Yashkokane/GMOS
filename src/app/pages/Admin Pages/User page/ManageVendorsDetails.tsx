@@ -41,7 +41,7 @@ const VendorManagementPage: FC = () => (
           </div>
         </div>
       </div>
-      <div className='row' style={{marginLeft: '20px', marginTop: '10px'}}>
+      <div className='row' style={{marginLeft: '200px', marginTop: '20px', marginRight: '200px'}}>
         <div className='col-sm-12'>
           <table
             className='table align-middle table-row-dashed fs-6 gy-5 dataTable no-footer'
@@ -61,7 +61,7 @@ const VendorManagementPage: FC = () => (
                   colSpan={1}
                   aria-sort='ascending'
                   aria-label='Name: activate to sort column descending'
-                  style={{width: '229.469px'}}
+                  style={{width: '150px'}}
                 >
                   Name
                 </th>
@@ -71,7 +71,7 @@ const VendorManagementPage: FC = () => (
                   rowSpan={1}
                   colSpan={1}
                   aria-label='Email: activate to sort column ascending'
-                  style={{width: '372.047px'}}
+                  style={{width: '380px'}}
                 >
                   Email
                 </th>
@@ -81,7 +81,7 @@ const VendorManagementPage: FC = () => (
                   rowSpan={1}
                   colSpan={1}
                   aria-label='Status: activate to sort column ascending'
-                  style={{width: '91.3438px;'}}
+                  style={{width: '50px;'}}
                 >
                   Status
                 </th>
@@ -91,7 +91,7 @@ const VendorManagementPage: FC = () => (
                   rowSpan={1}
                   colSpan={1}
                   aria-label='Action: activate to sort column ascending'
-                  style={{width: '172.641px'}}
+                  style={{width: '150px'}}
                 >
                   Action
                 </th>
@@ -413,7 +413,7 @@ const VendorManagementPage: FC = () => (
   </>
 )
 
-const ManageVendors = () => {
+const ManageVendorsDetails = () => {
   const intl = useIntl()
   return (
     <>
@@ -423,4 +423,4 @@ const ManageVendors = () => {
   )
 }
 
-export default ManageVendors
+export default ManageVendorsDetails

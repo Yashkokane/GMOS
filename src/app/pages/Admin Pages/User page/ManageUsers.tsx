@@ -1,8 +1,8 @@
-import {FC} from 'react'
-import {useIntl} from 'react-intl'
-import {Link} from 'react-router-dom'
-import {KTIcon} from '../../../../_metronic/helpers'
-import {PageTitle} from '../../../../_metronic/layout/core'
+import { FC } from 'react'
+import { useIntl } from 'react-intl'
+import { Link } from 'react-router-dom'
+import { KTIcon } from '../../../../_metronic/helpers'
+import { PageTitle } from '../../../../_metronic/layout/core'
 
 const UserManagementPage: FC = () => (
   <>
