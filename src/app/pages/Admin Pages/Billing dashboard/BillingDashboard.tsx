@@ -1,10 +1,8 @@
-import React from 'react'
 import {FC} from 'react'
-import {useIntl} from 'react-intl'
 import {toAbsoluteUrl} from '../../../../_metronic/helpers'
 import {PageTitle} from '../../../../_metronic/layout/core'
-import {BillingWidget} from '../Billing dashboard/BillingWidget'
 import {BillingTableWidget} from '../Billing dashboard/BillingTableWidget'
+import {BillingWidget} from '../Billing dashboard/BillingWidget'
 
 const BillingPage: FC = () => (
   <>
@@ -29,10 +27,10 @@ const BillingPage: FC = () => (
   </>
 )
 const BillingDashboard = () => {
-  const intl = useIntl()
+  //const intl = useIntl()
   return (
     <>
-      <PageTitle breadcrumbs={[]}>{intl.formatMessage({id: 'Billing Dashboard'})}</PageTitle>
+      <PageTitle breadcrumbs={[]}>Billing Dashboard</PageTitle>
       <BillingPage />
     </>
   )

@@ -1,5 +1,3 @@
-import React from 'react'
-import {useIntl} from 'react-intl'
 import {PageTitle} from '../../../../_metronic/layout/core'
 
 const VendorsPages = () => (
@@ -91,10 +89,10 @@ const VendorsPages = () => (
   </>
 )
 const VendorDetails = () => {
-  const intl = useIntl()
+  //const intl = useIntl()
   return (
     <>
-      <PageTitle breadcrumbs={[]}>{intl.formatMessage({id: 'Vendors'})}</PageTitle>
+      <PageTitle breadcrumbs={[]}>Vendors</PageTitle>
       <VendorsPages />
     </>
   )

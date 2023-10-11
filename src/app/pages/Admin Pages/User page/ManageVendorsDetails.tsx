@@ -1,5 +1,4 @@
 import {FC} from 'react'
-import {useIntl} from 'react-intl'
 import {PageTitle} from '../../../../_metronic/layout/core'
 const VendorManagementPage: FC = () => (
   <>
@@ -81,7 +80,7 @@ const VendorManagementPage: FC = () => (
                   rowSpan={1}
                   colSpan={1}
                   aria-label='Status: activate to sort column ascending'
-                  style={{width: '50px;'}}
+                  style={{width: '50px'}}
                 >
                   Status
                 </th>
@@ -112,66 +111,64 @@ const VendorManagementPage: FC = () => (
                   </div>
                 </td>
                 <td>
-                  <td>
-                    <a
-                      href='#'
-                      className='btn btn-sm btn-light btn-active-light-primary'
-                      data-kt-menu-trigger='click'
-                      data-kt-menu-placement='bottom-end'
-                      data-kt-menu-flip='top-end'
-                      style={{backgroundColor: '#5d2d91', color: 'white'}}
-                    >
-                      Actions
-                      <span className='svg-icon svg-icon-5 m-0'>
-                        <svg
-                          xmlns='http://www.w3.org/2000/svg'
-                          xmlnsXlink='http://www.w3.org/1999/xlink'
-                          width='24px'
-                          height='24px'
-                          viewBox='0 0 24 24'
-                          version='1.1'
-                          style={{marginLeft: '20px'}}
-                        >
-                          <g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'>
-                            <polygon points='0 0 24 0 24 24 0 24'></polygon>
-                            <path
-                              d='M6.70710678,15.7071068 C6.31658249,16.0976311 5.68341751,16.0976311 5.29289322,15.7071068 C4.90236893,15.3165825 4.90236893,14.6834175 5.29289322,14.2928932 L11.2928932,8.29289322 C11.6714722,7.91431428 12.2810586,7.90106866 12.6757246,8.26284586 L18.6757246,13.7628459 C19.0828436,14.1360383 19.1103465,14.7686056 18.7371541,15.1757246 C18.3639617,15.5828436 17.7313944,15.6103465 17.3242754,15.2371541 L12.0300757,10.3841378 L6.70710678,15.7071068 Z'
-                              fill='#000000'
-                              fill-rule='nonzero'
-                              transform='translate(12.000003, 11.999999) rotate(-180.000000) translate(-12.000003, -11.999999)'
-                            ></path>
-                          </g>
-                        </svg>
-                      </span>
-                    </a>
-                    <div
-                      className='menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-bold fs-7 w-125px py-4'
-                      data-kt-menu='true'
-                    >
-                      <div className='menu-item px-3'>
-                        <a href='#' className='menu-link px-3'>
-                          View
-                        </a>
-                      </div>
-                      <div className='menu-item px-3'>
-                        <a
-                          href='https://uatgmos.rapidsay.com/vendor_details/36/edit'
-                          className='menu-link px-3'
-                        >
-                          Edit
-                        </a>
-                      </div>
-                      <div className='menu-item px-3'>
-                        <a
-                          href='#'
-                          className='menu-link px-3'
-                          data-kt-customer-table-filter='delete_row'
-                        >
-                          Delete
-                        </a>
-                      </div>
+                  <a
+                    href='#'
+                    className='btn btn-sm btn-light btn-active-light-primary'
+                    data-kt-menu-trigger='click'
+                    data-kt-menu-placement='bottom-end'
+                    data-kt-menu-flip='top-end'
+                    style={{backgroundColor: '#5d2d91', color: 'white'}}
+                  >
+                    Actions
+                    <span className='svg-icon svg-icon-5 m-0'>
+                      <svg
+                        xmlns='http://www.w3.org/2000/svg'
+                        xmlnsXlink='http://www.w3.org/1999/xlink'
+                        width='24px'
+                        height='24px'
+                        viewBox='0 0 24 24'
+                        version='1.1'
+                        style={{marginLeft: '20px'}}
+                      >
+                        <g stroke='none' strokeWidth='1' fill='none' fillRule='evenodd'>
+                          <polygon points='0 0 24 0 24 24 0 24'></polygon>
+                          <path
+                            d='M6.70710678,15.7071068 C6.31658249,16.0976311 5.68341751,16.0976311 5.29289322,15.7071068 C4.90236893,15.3165825 4.90236893,14.6834175 5.29289322,14.2928932 L11.2928932,8.29289322 C11.6714722,7.91431428 12.2810586,7.90106866 12.6757246,8.26284586 L18.6757246,13.7628459 C19.0828436,14.1360383 19.1103465,14.7686056 18.7371541,15.1757246 C18.3639617,15.5828436 17.7313944,15.6103465 17.3242754,15.2371541 L12.0300757,10.3841378 L6.70710678,15.7071068 Z'
+                            fill='#000000'
+                            fillRule='nonzero'
+                            transform='translate(12.000003, 11.999999) rotate(-180.000000) translate(-12.000003, -11.999999)'
+                          ></path>
+                        </g>
+                      </svg>
+                    </span>
+                  </a>
+                  <div
+                    className='menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-bold fs-7 w-125px py-4'
+                    data-kt-menu='true'
+                  >
+                    <div className='menu-item px-3'>
+                      <a href='#' className='menu-link px-3'>
+                        View
+                      </a>
                     </div>
-                  </td>
+                    <div className='menu-item px-3'>
+                      <a
+                        href='https://uatgmos.rapidsay.com/vendor_details/36/edit'
+                        className='menu-link px-3'
+                      >
+                        Edit
+                      </a>
+                    </div>
+                    <div className='menu-item px-3'>
+                      <a
+                        href='#'
+                        className='menu-link px-3'
+                        data-kt-customer-table-filter='delete_row'
+                      >
+                        Delete
+                      </a>
+                    </div>
+                  </div>
                 </td>
               </tr>
               <tr>
@@ -188,66 +185,64 @@ const VendorManagementPage: FC = () => (
                   </div>
                 </td>
                 <td>
-                  <td>
-                    <a
-                      href='#'
-                      className='btn btn-sm btn-light btn-active-light-primary'
-                      data-kt-menu-trigger='click'
-                      data-kt-menu-placement='bottom-end'
-                      data-kt-menu-flip='top-end'
-                      style={{backgroundColor: '#5d2d91', color: 'white'}}
-                    >
-                      Actions
-                      <span className='svg-icon svg-icon-5 m-0'>
-                        <svg
-                          xmlns='http://www.w3.org/2000/svg'
-                          xmlnsXlink='http://www.w3.org/1999/xlink'
-                          width='24px'
-                          height='24px'
-                          viewBox='0 0 24 24'
-                          version='1.1'
-                          style={{marginLeft: '20px'}}
-                        >
-                          <g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'>
-                            <polygon points='0 0 24 0 24 24 0 24'></polygon>
-                            <path
-                              d='M6.70710678,15.7071068 C6.31658249,16.0976311 5.68341751,16.0976311 5.29289322,15.7071068 C4.90236893,15.3165825 4.90236893,14.6834175 5.29289322,14.2928932 L11.2928932,8.29289322 C11.6714722,7.91431428 12.2810586,7.90106866 12.6757246,8.26284586 L18.6757246,13.7628459 C19.0828436,14.1360383 19.1103465,14.7686056 18.7371541,15.1757246 C18.3639617,15.5828436 17.7313944,15.6103465 17.3242754,15.2371541 L12.0300757,10.3841378 L6.70710678,15.7071068 Z'
-                              fill='#000000'
-                              fill-rule='nonzero'
-                              transform='translate(12.000003, 11.999999) rotate(-180.000000) translate(-12.000003, -11.999999)'
-                            ></path>
-                          </g>
-                        </svg>
-                      </span>
-                    </a>
-                    <div
-                      className='menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-bold fs-7 w-125px py-4'
-                      data-kt-menu='true'
-                    >
-                      <div className='menu-item px-3'>
-                        <a href='#' className='menu-link px-3'>
-                          View
-                        </a>
-                      </div>
-                      <div className='menu-item px-3'>
-                        <a
-                          href='https://uatgmos.rapidsay.com/vendor_details/36/edit'
-                          className='menu-link px-3'
-                        >
-                          Edit
-                        </a>
-                      </div>
-                      <div className='menu-item px-3'>
-                        <a
-                          href='#'
-                          className='menu-link px-3'
-                          data-kt-customer-table-filter='delete_row'
-                        >
-                          Delete
-                        </a>
-                      </div>
+                  <a
+                    href='#'
+                    className='btn btn-sm btn-light btn-active-light-primary'
+                    data-kt-menu-trigger='click'
+                    data-kt-menu-placement='bottom-end'
+                    data-kt-menu-flip='top-end'
+                    style={{backgroundColor: '#5d2d91', color: 'white'}}
+                  >
+                    Actions
+                    <span className='svg-icon svg-icon-5 m-0'>
+                      <svg
+                        xmlns='http://www.w3.org/2000/svg'
+                        xmlnsXlink='http://www.w3.org/1999/xlink'
+                        width='24px'
+                        height='24px'
+                        viewBox='0 0 24 24'
+                        version='1.1'
+                        style={{marginLeft: '20px'}}
+                      >
+                        <g stroke='none' strokeWidth='1' fill='none' fillRule='evenodd'>
+                          <polygon points='0 0 24 0 24 24 0 24'></polygon>
+                          <path
+                            d='M6.70710678,15.7071068 C6.31658249,16.0976311 5.68341751,16.0976311 5.29289322,15.7071068 C4.90236893,15.3165825 4.90236893,14.6834175 5.29289322,14.2928932 L11.2928932,8.29289322 C11.6714722,7.91431428 12.2810586,7.90106866 12.6757246,8.26284586 L18.6757246,13.7628459 C19.0828436,14.1360383 19.1103465,14.7686056 18.7371541,15.1757246 C18.3639617,15.5828436 17.7313944,15.6103465 17.3242754,15.2371541 L12.0300757,10.3841378 L6.70710678,15.7071068 Z'
+                            fill='#000000'
+                            fillRule='nonzero'
+                            transform='translate(12.000003, 11.999999) rotate(-180.000000) translate(-12.000003, -11.999999)'
+                          ></path>
+                        </g>
+                      </svg>
+                    </span>
+                  </a>
+                  <div
+                    className='menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-bold fs-7 w-125px py-4'
+                    data-kt-menu='true'
+                  >
+                    <div className='menu-item px-3'>
+                      <a href='#' className='menu-link px-3'>
+                        View
+                      </a>
                     </div>
-                  </td>
+                    <div className='menu-item px-3'>
+                      <a
+                        href='https://uatgmos.rapidsay.com/vendor_details/36/edit'
+                        className='menu-link px-3'
+                      >
+                        Edit
+                      </a>
+                    </div>
+                    <div className='menu-item px-3'>
+                      <a
+                        href='#'
+                        className='menu-link px-3'
+                        data-kt-customer-table-filter='delete_row'
+                      >
+                        Delete
+                      </a>
+                    </div>
+                  </div>
                 </td>
               </tr>
               <tr>
@@ -264,66 +259,64 @@ const VendorManagementPage: FC = () => (
                   </div>
                 </td>
                 <td>
-                  <td>
-                    <a
-                      href='#'
-                      className='btn btn-sm btn-light btn-active-light-primary'
-                      data-kt-menu-trigger='click'
-                      data-kt-menu-placement='bottom-end'
-                      data-kt-menu-flip='top-end'
-                      style={{backgroundColor: '#5d2d91', color: 'white'}}
-                    >
-                      Actions
-                      <span className='svg-icon svg-icon-5 m-0'>
-                        <svg
-                          xmlns='http://www.w3.org/2000/svg'
-                          xmlnsXlink='http://www.w3.org/1999/xlink'
-                          width='24px'
-                          height='24px'
-                          viewBox='0 0 24 24'
-                          version='1.1'
-                          style={{marginLeft: '20px'}}
-                        >
-                          <g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'>
-                            <polygon points='0 0 24 0 24 24 0 24'></polygon>
-                            <path
-                              d='M6.70710678,15.7071068 C6.31658249,16.0976311 5.68341751,16.0976311 5.29289322,15.7071068 C4.90236893,15.3165825 4.90236893,14.6834175 5.29289322,14.2928932 L11.2928932,8.29289322 C11.6714722,7.91431428 12.2810586,7.90106866 12.6757246,8.26284586 L18.6757246,13.7628459 C19.0828436,14.1360383 19.1103465,14.7686056 18.7371541,15.1757246 C18.3639617,15.5828436 17.7313944,15.6103465 17.3242754,15.2371541 L12.0300757,10.3841378 L6.70710678,15.7071068 Z'
-                              fill='#000000'
-                              fill-rule='nonzero'
-                              transform='translate(12.000003, 11.999999) rotate(-180.000000) translate(-12.000003, -11.999999)'
-                            ></path>
-                          </g>
-                        </svg>
-                      </span>
-                    </a>
-                    <div
-                      className='menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-bold fs-7 w-125px py-4'
-                      data-kt-menu='true'
-                    >
-                      <div className='menu-item px-3'>
-                        <a href='#' className='menu-link px-3'>
-                          View
-                        </a>
-                      </div>
-                      <div className='menu-item px-3'>
-                        <a
-                          href='https://uatgmos.rapidsay.com/vendor_details/36/edit'
-                          className='menu-link px-3'
-                        >
-                          Edit
-                        </a>
-                      </div>
-                      <div className='menu-item px-3'>
-                        <a
-                          href='#'
-                          className='menu-link px-3'
-                          data-kt-customer-table-filter='delete_row'
-                        >
-                          Delete
-                        </a>
-                      </div>
+                  <a
+                    href='#'
+                    className='btn btn-sm btn-light btn-active-light-primary'
+                    data-kt-menu-trigger='click'
+                    data-kt-menu-placement='bottom-end'
+                    data-kt-menu-flip='top-end'
+                    style={{backgroundColor: '#5d2d91', color: 'white'}}
+                  >
+                    Actions
+                    <span className='svg-icon svg-icon-5 m-0'>
+                      <svg
+                        xmlns='http://www.w3.org/2000/svg'
+                        xmlnsXlink='http://www.w3.org/1999/xlink'
+                        width='24px'
+                        height='24px'
+                        viewBox='0 0 24 24'
+                        version='1.1'
+                        style={{marginLeft: '20px'}}
+                      >
+                        <g stroke='none' strokeWidth='1' fill='none' fillRule='evenodd'>
+                          <polygon points='0 0 24 0 24 24 0 24'></polygon>
+                          <path
+                            d='M6.70710678,15.7071068 C6.31658249,16.0976311 5.68341751,16.0976311 5.29289322,15.7071068 C4.90236893,15.3165825 4.90236893,14.6834175 5.29289322,14.2928932 L11.2928932,8.29289322 C11.6714722,7.91431428 12.2810586,7.90106866 12.6757246,8.26284586 L18.6757246,13.7628459 C19.0828436,14.1360383 19.1103465,14.7686056 18.7371541,15.1757246 C18.3639617,15.5828436 17.7313944,15.6103465 17.3242754,15.2371541 L12.0300757,10.3841378 L6.70710678,15.7071068 Z'
+                            fill='#000000'
+                            fillRule='nonzero'
+                            transform='translate(12.000003, 11.999999) rotate(-180.000000) translate(-12.000003, -11.999999)'
+                          ></path>
+                        </g>
+                      </svg>
+                    </span>
+                  </a>
+                  <div
+                    className='menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-bold fs-7 w-125px py-4'
+                    data-kt-menu='true'
+                  >
+                    <div className='menu-item px-3'>
+                      <a href='#' className='menu-link px-3'>
+                        View
+                      </a>
                     </div>
-                  </td>
+                    <div className='menu-item px-3'>
+                      <a
+                        href='https://uatgmos.rapidsay.com/vendor_details/36/edit'
+                        className='menu-link px-3'
+                      >
+                        Edit
+                      </a>
+                    </div>
+                    <div className='menu-item px-3'>
+                      <a
+                        href='#'
+                        className='menu-link px-3'
+                        data-kt-customer-table-filter='delete_row'
+                      >
+                        Delete
+                      </a>
+                    </div>
+                  </div>
                 </td>
               </tr>
             </tbody>
@@ -414,10 +407,10 @@ const VendorManagementPage: FC = () => (
 )
 
 const ManageVendorsDetails = () => {
-  const intl = useIntl()
+  //const intl = useIntl()
   return (
     <>
-      <PageTitle breadcrumbs={[]}>{intl.formatMessage({id: 'Manage Vendors'})}</PageTitle>
+      <PageTitle breadcrumbs={[]}>Manage Vendors</PageTitle>
       <VendorManagementPage />
     </>
   )

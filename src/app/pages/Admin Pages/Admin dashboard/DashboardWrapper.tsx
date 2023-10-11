@@ -1,9 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import {FC} from 'react'
-import {useIntl} from 'react-intl'
-import {toAbsoluteUrl} from '../../../../_metronic/helpers'
-import {PageTitle} from '../../../../_metronic/layout/core'
-import {CardsWidget20, ChartsWidget3, ChartsWidget1} from '../../../../_metronic/partials/widgets'
+import { FC } from 'react'
+import { toAbsoluteUrl } from '../../../../_metronic/helpers'
+import { PageTitle } from '../../../../_metronic/layout/core'
+import { CardsWidget20, ChartsWidget1, ChartsWidget3 } from '../../../../_metronic/partials/widgets'
 
 const DashboardPage: FC = () => (
   <>
@@ -32,13 +31,14 @@ const DashboardPage: FC = () => (
 )
 
 const DashboardWrapper: FC = () => {
-  const intl = useIntl()
+  //const intl = useIntl()
   return (
     <>
-      <PageTitle breadcrumbs={[]}>{intl.formatMessage({id: 'Admin Dashboard'})}</PageTitle>
+      <PageTitle breadcrumbs={[]}>Admin Dashboard</PageTitle>
       <DashboardPage />
     </>
   )
 }
 
-export {DashboardWrapper}
+export { DashboardWrapper }
+

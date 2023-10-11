@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import {FC} from 'react'
-import {useIntl} from 'react-intl'
 import {toAbsoluteUrl} from '../../../../_metronic/helpers'
 import {PageTitle} from '../../../../_metronic/layout/core'
 import {ClientChartsWidget3} from '../Charts/ClientChartsWidget3'
@@ -28,10 +27,10 @@ const DashboardPage: FC = () => (
 )
 
 const ClientDashboardWrapper: FC = () => {
-  const intl = useIntl()
+  //const intl = useIntl()
   return (
     <>
-      <PageTitle breadcrumbs={[]}>{intl.formatMessage({id: 'Client Dashboard'})}</PageTitle>
+      <PageTitle breadcrumbs={[]}>Client Dashboard</PageTitle>
       <DashboardPage />
     </>
   )

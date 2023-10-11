@@ -4,14 +4,14 @@ import '../sidebar-menu/sidebar.css'
 import {SidebarMenuItem} from './SidebarMenuItem'
 import {SidebarMenuItemWithSub} from './SidebarMenuItemWithSub'
 const SidebarMenuMain = () => {
-  const intl = useIntl()
+  //const intl = useIntl()
 
   return (
     <>
       <SidebarMenuItem
         to='/dashboard'
         icon='element-11'
-        title={intl.formatMessage({id: 'MENU.DASHBOARD'})}
+        title='Dashboard'
         fontIcon='bi-app-indicator'
       />
       <SidebarMenuItem
@@ -39,7 +39,11 @@ const SidebarMenuMain = () => {
         icon='element-11'
       >
         <SidebarMenuItem to='/#' title='Manage Projects' hasBullet={true}></SidebarMenuItem>
-        <SidebarMenuItem to='/#' title='Manage Suppliers' hasBullet={true}></SidebarMenuItem>
+        <SidebarMenuItem
+          to='/ManageSupppliers'
+          title='Manage Suppliers'
+          hasBullet={true}
+        ></SidebarMenuItem>
       </SidebarMenuItemWithSub>
       <SidebarMenuItem
         to='/ManageCategory'

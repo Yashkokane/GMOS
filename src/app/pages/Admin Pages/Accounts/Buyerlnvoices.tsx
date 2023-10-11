@@ -1,6 +1,4 @@
-import React from 'react'
 import {PageTitle} from '../../../../_metronic/layout/core'
-import {useIntl} from 'react-intl'
 
 const BuyerInvoicePage = () => (
   <>
@@ -120,7 +118,7 @@ const BuyerInvoicePage = () => (
                         aria-controls='invoice'
                         rowSpan={1}
                         colSpan={1}
-                        style={{width: '140px;'}}
+                        style={{width: '140px'}}
                         aria-label='Completes : activate to sort column ascending'
                       >
                         Completes{' '}
@@ -131,7 +129,7 @@ const BuyerInvoicePage = () => (
                         aria-controls='invoice'
                         rowSpan={1}
                         colSpan={1}
-                        style={{width: '165px;'}}
+                        style={{width: '165px'}}
                         aria-label='Total Amount: activate to sort column ascending'
                       >
                         Total Amount
@@ -142,7 +140,7 @@ const BuyerInvoicePage = () => (
                         aria-controls='invoice'
                         rowSpan={1}
                         colSpan={1}
-                        style={{width: '160px;'}}
+                        style={{width: '160px'}}
                         aria-label='Created Date: activate to sort column ascending'
                       >
                         Created Date
@@ -408,10 +406,10 @@ const BuyerInvoicePage = () => (
   </>
 )
 const Buyerlnvoices = () => {
-  const intl = useIntl()
+  //const intl = useIntl()
   return (
     <>
-      <PageTitle breadcrumbs={[]}>{intl.formatMessage({id: ' Buyer Invoice'})}</PageTitle>
+      <PageTitle breadcrumbs={[]}>Buyer Invoice</PageTitle>
       <BuyerInvoicePage />
     </>
   )

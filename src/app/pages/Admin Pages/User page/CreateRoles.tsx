@@ -1,9 +1,7 @@
-import React from 'react'
-import {PageTitle} from '../../../../_metronic/layout/core'
 import {FC} from 'react'
-import {useIntl} from 'react-intl'
 import {Link} from 'react-router-dom'
 import {KTIcon} from '../../../../_metronic/helpers'
+import {PageTitle} from '../../../../_metronic/layout/core'
 
 const CreateRolesPage: FC = () => (
   <>
@@ -854,10 +852,10 @@ const CreateRolesPage: FC = () => (
   </>
 )
 const CreateRoles = () => {
-  const intl = useIntl()
+  //const intl = useIntl()
   return (
     <>
-      <PageTitle breadcrumbs={[]}>{intl.formatMessage({id: 'Create Roles'})}</PageTitle>
+      <PageTitle breadcrumbs={[]}>Create Roles</PageTitle>
       <CreateRolesPage />
     </>
   )

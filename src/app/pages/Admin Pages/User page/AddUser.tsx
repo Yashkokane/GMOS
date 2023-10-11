@@ -1,5 +1,4 @@
 import {FC} from 'react'
-import {useIntl} from 'react-intl'
 import {PageTitle} from '../../../../_metronic/layout/core'
 const AddUsers: FC = () => (
   <>
@@ -160,10 +159,10 @@ const AddUsers: FC = () => (
 )
 
 const AddUser: FC = () => {
-  const intl = useIntl()
+  //const intl = useIntl()
   return (
     <>
-      <PageTitle breadcrumbs={[]}>{intl.formatMessage({id: 'Add Users'})}</PageTitle>
+      <PageTitle breadcrumbs={[]}>Add Users</PageTitle>
       <AddUsers />
     </>
   )

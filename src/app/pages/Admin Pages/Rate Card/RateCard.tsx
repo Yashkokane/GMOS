@@ -1,8 +1,6 @@
-import React from 'react'
-import {useIntl} from 'react-intl'
 import {PageTitle} from '../../../../_metronic/layout/core'
-import UploadRateinfo from './UploadRateinfo'
 import RateCardTable from './RateCardTable'
+import UploadRateinfo from './UploadRateinfo'
 
 const RateCardPage = () => (
   <>
@@ -17,10 +15,10 @@ const RateCardPage = () => (
   </>
 )
 const RateCard = () => {
-  const intl = useIntl()
+  //const intl = useIntl()
   return (
     <>
-      <PageTitle breadcrumbs={[]}>{intl.formatMessage({id: 'Rate Card'})}</PageTitle>
+      <PageTitle breadcrumbs={[]}>Rate Card</PageTitle>
       <RateCardPage />
     </>
   )

@@ -1,6 +1,4 @@
-import React from 'react'
 import {PageTitle} from '../../../../_metronic/layout/core'
-import {useIntl} from 'react-intl'
 
 const SupplierInvoicePage = () => (
   <>
@@ -125,7 +123,7 @@ const SupplierInvoicePage = () => (
                         aria-controls='survey'
                         rowSpan={1}
                         colSpan={1}
-                        style={{width: '113px;'}}
+                        style={{width: '113px'}}
                         aria-label='Project ID: activate to sort column ascending'
                       >
                         Project ID
@@ -169,7 +167,7 @@ const SupplierInvoicePage = () => (
                         aria-controls='survey'
                         rowSpan={1}
                         colSpan={1}
-                        style={{width: '121px;'}}
+                        style={{width: '121px'}}
                         aria-label='Download : activate to sort column ascending'
                       >
                         Download{' '}
@@ -232,10 +230,10 @@ const SupplierInvoicePage = () => (
 )
 
 const SupplierInvoices = () => {
-  const intl = useIntl()
+  //const intl = useIntl()
   return (
     <>
-      <PageTitle breadcrumbs={[]}>{intl.formatMessage({id: 'Supplier Invoices'})}</PageTitle>
+      <PageTitle breadcrumbs={[]}>Supplier Invoices</PageTitle>
       <SupplierInvoicePage />
     </>
   )

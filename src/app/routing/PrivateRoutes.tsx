@@ -19,6 +19,7 @@ import VendorDetails from '../pages/Admin Pages/Vendor/VendorDetails'
 import RateCard from '../pages/Admin Pages/Rate Card/RateCard'
 import Buyerlnvoices from '../pages/Admin Pages/Accounts/Buyerlnvoices'
 import SupplierInvoices from '../pages/Admin Pages/Accounts/SupplierInvoices'
+import ManageSupplier from '../pages/Admin Pages/Project management/ManageSupplier'
 
 const PrivateRoutes = () => {
   const ProfilePage = lazy(() => import('../modules/profile/ProfilePage'))
@@ -43,6 +44,7 @@ const PrivateRoutes = () => {
         <Route path='RateCard' element={<RateCard />} />
         <Route path='BuyerInvoices' element={<Buyerlnvoices />} />
         <Route path='SupplierInvoices' element={<SupplierInvoices />} />
+        <Route path='ManageSupppliers' element={<ManageSupplier />} />
         <Route path='vendordashboard' />
         <Route path='menu-test' element={<MenuTestPage />} />
         {/* Lazy Modules
